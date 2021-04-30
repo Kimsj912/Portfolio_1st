@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+    
     <title>안녕하세요! 김수정입니다!</title>
     <script>
         var now = new Date();
@@ -11,63 +13,70 @@
         var result = Math.floor(gap/ (1000 * 60 * 60 * 24));
 
         window.onload = function() {
-            document.getElementById("BD").innerHTML = `<p>1999.11.22 (올해 생일까지 ${result} 일 전)</p>`; 
+            document.getElementById("BD").innerHTML = `1999.11.22 (올해 생일까지 ${result} 일 전)`; 
         }
     </script>
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="blog_name">안녕하세요! 김수정입니다!</h1>
-    </header>
-    <nav class="main_navbar">
-        <a class="home" href="./myppl_home.html">HOME</a>
-        <a class="info" href="./myppl_dev.html">DEV</a>
-        <a class="proj" href="./myppl_proj.html">PROJ</a>
-        <a class="more" href="./myppl_asset.html">ASSET</a>
-    </nav>
-    <div class="content">
+    <div id="top">
+        <header class="header">
+            <h1 class="blog_name">안녕하세요! 김수정입니다!</h1>
+        </header>
+        <nav class="nav">
+            <a class="tab" id="home_tab" href="./myppl_home.html">HOME</a>
+            <a class="tab" href="./myppl_dev.html">DEV</a>
+            <a class="tab" href="./myppl_proj.html">PROJ</a>
+            <a class="tab" href="./myppl_asset.html">ASSET</a>
+        </nav>
+    </div>
+    <hr align="right">
+    <div id="main">
         <aside class="cont_aside">
-            <h2 class="page_name">기본정보</h2>
+            <h2 class="page_name"><기본정보></h2>
             <div class="nav_div">
                 <ul class="cont_navbar_ul">
-                    <li><a href="#">이름</a></li>
-                    <li><a href="#">한마디 자기소개</a></li>
-                    <li><a href="#">생년월일</a></li>
-                    <li><a href="#">MBTI</a></li>
-                    <li><a href="#">취미</a></li>
-                    <li><a href="#">이메일</a></li>
-                    <li><a href="#">링크</a></li>
+                    <li class="cont_navbar_li"><a href="#">이름</a></li>
+                    <li class="cont_navbar_li"><a href="#">한마디 자기소개</a></li>
+                    <li class="cont_navbar_li"><a href="#">생년월일</a></li>
+                    <li class="cont_navbar_li"><a href="#">MBTI</a></li>
+                    <li class="cont_navbar_li"><a href="#">취미</a></li>
+                    <li class="cont_navbar_li"><a href="#">이메일</a></li>
+                    <li class="cont_navbar_li"><a href="#">링크</a></li>
                 </ul>
             </div>
         </aside>
 
-        <article>
-            <h3>이름</h3>
-            <p>김수정</p>
-            
-            <h3>한마디 자기소개</h3>
-            <p>한순간에 타올라 모든 걸 태워버리는 거센 불길이 되기보단 은은한게 향을 입혀 오래갈 수 있도록 하는 훈연같은 사람이 되고 싶습니다.</p>
-            
-            <h3>생년월일</h3>
-            <p id="BD">1999.11.22</p>
-            
-            <h3>MBTI</h3>
-            <p>ISFP가 주로 나오고 INFP, ENFP, INTP도 종종 나옵니다</p>
-            
-            <h3>취미</h3>
-            <p>K-pop과 팝송을 찾아보고 듣는 걸 좋아합니다 :)</p>
-            
-            <h3>이메일</h3>
-            <p>개인 : tnwjd9912a@naver.com <br>업무용 : sujk912@gmail.com</p>
-            
+        <article class="content">
+            <div class="box">
+                <h3>이름</h3>
+                <p>김수정</p>
+            </div>
+            <div class="box">
+                <h3>한마디 자기소개</h3>
+                <p>한순간에 타올라 모든 걸 태워버리는 거센 불길이 되기보단 은은한게 향을 입혀 오래갈 수 있도록 하는 훈연같은 사람이 되고 싶습니다.</p>
+            </div>
+            <div class="box">
+                <h3>생년월일</h3>
+                <p id="BD">1999.11.22</p>
+            </div>
+            <div class="box">
+                <h3>MBTI</h3>
+                <p>ISFP가 주로 나오고 INFP, ENFP, INTP도 종종 나옵니다</p>
+            </div>
+            <div class="box">
+                <h3>취미</h3>
+                <p>K-pop과 팝송을 찾아보고 듣는 걸 좋아합니다 :)</p>
+            </div>
+            <div class="box">
+                <h3>이메일</h3>
+                <p>개인 : tnwjd9912a@naver.com <br>업무용 : sujk912@gmail.com</p>
+            </div>
+            <div class="box">
             <h3>링크</h3>
-            <p>
-                <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="" class="info_art_git_img">``
-                <p>깃: <a href="https://github.com/Kimsj912">https://github.com/Kimsj912</a></p><br>
-                <img src="data:image/png;base64,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" alt="" class="info_art_rp_img">
-                <p>로켓펀치: <a href="https://www.rocketpunch.com/@sujk912">https://www.rocketpunch.com/@sujk912</a></p><br>
-            </p><br>
+                <p>깃: <a target="_blank" href="https://github.com/Kimsj912">https://github.com/Kimsj912</a></p>
+                <p>로켓펀치: <a target="_blank" href="https://www.rocketpunch.com/@sujk912">https://www.rocketpunch.com/@sujk912</a></p>
+            </div>
         </article> 
             
     </div>
