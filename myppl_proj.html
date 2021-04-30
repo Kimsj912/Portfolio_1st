@@ -4,83 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>안녕하세요! 김수정입니다!</title>
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="blog_name">제가 진행해본 프로젝트를 소개합니다 :)</h1>
-    </header>
-    <nav class="main_navbar">
-        <a class="home" href="./myppl_home.html">HOME</a>
-        <a class="info" href="./myppl_dev.html">DEV</a>
-        <a class="proj" href="./myppl_proj.html">PROJ</a>
-        <a class="more" href="./myppl_asset.html">ASSET</a>
-    </nav>
-    <div class="content">
+    <div id="top">
+        <header class="header">
+            <h1 class="blog_name">제가 진행해본 프로젝트를 소개합니다 :)</h1>
+        </header>
+        <nav class="nav">
+            <a class="tab" id="home_tab" href="./myppl_home.html">HOME</a>
+            <a class="tab" href="./myppl_dev.html">DEV</a>
+            <a class="tab" href="./myppl_proj.html">PROJ</a>
+            <a class="tab" href="./myppl_asset.html">ASSET</a>
+        </nav>
+    </div>
+    <hr align="right">
+    <div id="main">
         <aside class="cont_aside">
-            <h2 class="page_name">프로젝트</h2>
+            <h2 class="page_name"><프로젝트></h2>
             <div class="nav_div">
                 <ul class="cont_navbar_ul">
-                    <li><a href="#">교내 프로젝트</a></li>
+                    <li class="cont_navbar_li"><a href="#">교내 프로젝트</a></li>
                     <ul class="cont_inner_navbar_ul">
-                        <li><a href="#">수강신청</a></li>
-                        <li><a href="#">그림판</a></li>
-                        <li><a href="#">보험사</a></li>
+                        <li class="cont_inner_navbar_li"><a href="#">수강신청</a></li>
+                        <li class="cont_inner_navbar_li"><a href="#">그림판</a></li>
+                        <li class="cont_inner_navbar_li"><a href="#">보험사</a></li>
                     </ul>
-                    <li><a href="#">개인 프로젝트</a></li>
+                    <li class="cont_navbar_li"><a href="#">개인 프로젝트</a></li>
                 </ul>
             </div>
         </aside>
 
-        <article>
-            <h3>교내 프로젝트</h3>
-                <h4>- 수강신청</h4>
-                
-                <h5>기간</h5>
-                <p>2018.09 ~ 2018.11</p>
-                
-                <h5>깃 주소</h5>
-                <p><a href="https://github.com/Kimsj912/2018_CourseRegistration">깃 주소 : https://github.com/Kimsj912/2018_CourseRegistration</a></p>
-
-                <h5>프로젝트 설명</h5>
-                <p>1학년 2학기 재학 중 처음으로 진행한 자바 프로젝트입니다.
-                    mvc패턴을 배우며 진행했고 크게 수강신청, 개인정보, 로그인으로 나눠 볼 수 있습니다.
-                    먼저, 수강신청 화면에서는 전체 강의 목록 중에서 원하는 강의를 선택해 중간의 장바구니 목록과 수강신청 목록으로 이동시킬 수 있습니다.
-                    다음으로 개인정보에서는 자신의 사진과 이름, 학번, 주민번호, 이메일, 연락처를 가져와 보여줍니다.
-                    마지막으로 로그인에서는 수강신청 화면으로 넘어가는 버튼, 잃어버린 아이디나 비밀번호를 찾는 버튼, 취소하고 종료하는 버튼을 선택할 수 있습니다.</p>
-                
-                <h4>- 그림판</h4>
-                
-                <h5>기간</h5>
-                <p>2019.03 ~ 2019.06</p>
-                
-                <h5>깃 주소</h5>
-                <p><a href="https://github.com/Kimsj912/DrawingPanel">깃 주소 : https://github.com/Kimsj912/DrawingPanel</a></p>
-
-                <h5>프로젝트 설명</h5>
-                <p>2학년 1학기 재학 중 진행한 그림판 만들기 프로젝트입니다.
-                    사각형, 타원, 다각형, 정삼각형, 직각삼각형을 그릴 수 있고, 도형의 선 색과 배경 색을 선택하여 칠할 수 있습니다. 
-                    또한 그려진 도형을 선택하여 이동과 회전, 크기 조절이 가능합니다. 
-                    그린 그림은 파일로 저장하고 불러올 수 있으며 Graphics 클래스와 Swing 클래스를 주로 이용하였습니다. 
-                    컴포넌트의 배열과 자바에서의 파일 저장, 이벤트의 발생에 대해 공부할 수 있었습니다.</p>
-
-                <h4>- 보험사</h4>
-                
-                <h5>기간</h5>
-                <p>2020.03 ~ 2020.06</p>
-                
-                <h5>깃 주소</h5>
-                <p><a href="https://github.com/Kimsj912/2020_3-1_InsuranceSystem">깃 주소 : https://github.com/Kimsj912/2020_3-1_InsuranceSystem</a></p>
-
-                <h5>프로젝트 설명</h5>
-                <p>보험사 시스템을 분석하여 하나의 시스템을 분석, 설계, 구현까지 진행해보았습니다. 
-                    보험을 개발하고 승인하는 절차와 보험을 가입하는 절차, 보험에 대한 보상을 제공하는 절차로 나누고 이용하는 유저의 관점에
-                    따라 보이는 뷰를 다르게 하였습니다. 데이터베이스를 만들어 프로그램에서 사용하는 데이터를 저장 및 불러올 수 있게 하였습니다.</p>
+        <article class="content">
+            <div class="box">
+                <h3>교내 프로젝트</h3>
+                <div class="inner_box">
+                    <h4>- 수강신청</h4>
+                    <h5>기간</h5>
+                    <p>2018.09 ~ 2018.11</p>
                     
+                    <h5>깃 주소</h5>
+                    <p><a class="basic_hl" href="https://github.com/Kimsj912/2018_CourseRegistration"  target="_blank">깃 주소 : https://github.com/Kimsj912/2018_CourseRegistration</a></p>
+
+                    <h5>프로젝트 설명</h5>
+                    <p>1학년 2학기 재학 중 처음으로 진행한 자바 프로젝트입니다.
+                        mvc패턴을 배우며 진행했고 크게 수강신청, 개인정보, 로그인으로 나눠 볼 수 있습니다.
+                        먼저, 수강신청 화면에서는 전체 강의 목록 중에서 원하는 강의를 선택해 중간의 장바구니 목록과 수강신청 목록으로 이동시킬 수 있습니다.
+                        다음으로 개인정보에서는 자신의 사진과 이름, 학번, 주민번호, 이메일, 연락처를 가져와 보여줍니다.
+                        마지막으로 로그인에서는 수강신청 화면으로 넘어가는 버튼, 잃어버린 아이디나 비밀번호를 찾는 버튼, 취소하고 종료하는 버튼을 선택할 수 있습니다.</p>
+                </div>
+                <div class="inner_box">
+                    <h4>- 그림판</h4>
                     
-            <h3>개인 프로젝트</h3>
-                <h4>- 아직 준비중입니다 :...(</h4>
-            
+                    <h5>기간</h5>
+                    <p>2019.03 ~ 2019.06</p>
+                    
+                    <h5>깃 주소</h5>
+                    <p><a class="basic_hl" href="https://github.com/Kimsj912/DrawingPanel"  target="_blank">깃 주소 : https://github.com/Kimsj912/DrawingPanel</a></p>
+
+                    <h5>프로젝트 설명</h5>
+                    <p>2학년 1학기 재학 중 진행한 그림판 만들기 프로젝트입니다.
+                        사각형, 타원, 다각형, 정삼각형, 직각삼각형을 그릴 수 있고, 도형의 선 색과 배경 색을 선택하여 칠할 수 있습니다. 
+                        또한 그려진 도형을 선택하여 이동과 회전, 크기 조절이 가능합니다. 
+                        그린 그림은 파일로 저장하고 불러올 수 있으며 Graphics 클래스와 Swing 클래스를 주로 이용하였습니다. 
+                        컴포넌트의 배열과 자바에서의 파일 저장, 이벤트의 발생에 대해 공부할 수 있었습니다.</p>
+                </div>
+                <div class="inner_box">
+                    <h4>- 보험사</h4>
+                    
+                    <h5>기간</h5>
+                    <p>2020.03 ~ 2020.06</p>
+                    
+                    <h5>깃 주소</h5>
+                    <p><a class="basic_hl" href="https://github.com/Kimsj912/2020_3-1_InsuranceSystem" target="_blank">깃 주소 : https://github.com/Kimsj912/2020_3-1_InsuranceSystem</a></p>
+
+                    <h5>프로젝트 설명</h5>
+                    <p>보험사 시스템을 분석하여 하나의 시스템을 분석, 설계, 구현까지 진행해보았습니다. 
+                        보험을 개발하고 승인하는 절차와 보험을 가입하는 절차, 보험에 대한 보상을 제공하는 절차로 나누고 이용하는 유저의 관점에
+                        따라 보이는 뷰를 다르게 하였습니다. 데이터베이스를 만들어 프로그램에서 사용하는 데이터를 저장 및 불러올 수 있게 하였습니다.</p>
+                </div>   
+            </div>      
+            <div class="box">
+                <h3>개인 프로젝트</h3>
+                <div class="inner_box">
+                    <h4>- 아직 준비중입니다 :...(</h4>
+                </div>
+            </div>
         </article> 
             
     </div>
