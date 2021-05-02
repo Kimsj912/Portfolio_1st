@@ -21,5 +21,3 @@ HTML과 CSS, 약간의 JS를 이용하여 만들었습니다.
 <strong>ASSET 탭</strong>
 애셋 탭은 해당 포트폴리오 페이지를 만들면서(혹은 만들 때) 썻던 색이나, 문자를 담았습니다.
 
-디자인 : https://xd.adobe.com/view/6ca581f7-abfc-4a34-9dca-fd8eca52341a-39f6/
-
