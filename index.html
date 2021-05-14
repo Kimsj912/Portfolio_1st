@@ -11,6 +11,7 @@
         var Dday = new Date(now.getFullYear(), 11, 22);
         var gap = Dday - now;
         var result = Math.floor(gap/ (1000 * 60 * 60 * 24));
+        
 
         window.onload = function() {
             document.getElementById("BD").innerHTML = `1999.11.22 (올해 생일까지 ${result} 일 전)`; 
