@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {l% load staticfiles %}
+	<link rel="stylesheet" href="/static/css/style.css">
+    
+    <title>안녕하세요! 김수정입니다!</title>
+    <script>
+        var now = new Date();
+        var Dday = new Date(now.getFullYear(), 11, 22);
+        var gap = Dday - now;
+        var result = Math.floor(gap/ (1000 * 60 * 60 * 24));
+
+        window.onload = function() {
+            document.getElementById("BD").innerHTML = `1999.11.22 (올해 생일까지 ${result} 일 전)`; 
+        }
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <header class="header">
+            <h1 class="blog_name">안녕하세요! 김수정입니다!</h1>
+        </header>
+        <nav class="nav">
+            <a class="tab" id="home_tab" href="/">HOME</a>
+            <a class="tab" href="/dev">DEV</a>
+            <a class="tab" href="/proj">PROJ</a>
+            <a class="tab" href="/asset">ASSET</a>
+        </nav>
+    </div>
+    <hr align="right">
+    <div id="main">
+        <aside class="cont_aside">
+            <h2 class="page_name"><기본정보></h2>
+            <div class="nav_div">
+                <ul class="cont_navbar_ul">
+                    <li class="cont_navbar_li"><a href="#">이름</a></li>
+                    <li class="cont_navbar_li"><a href="#">한마디 자기소개</a></li>
+                    <li class="cont_navbar_li"><a href="#">생년월일</a></li>
+                    <li class="cont_navbar_li"><a href="#">MBTI</a></li>
+                    <li class="cont_navbar_li"><a href="#">취미</a></li>
+                    <li class="cont_navbar_li"><a href="#">이메일</a></li>
+                    <li class="cont_navbar_li"><a href="#">링크</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <article class="content">
+            <div class="box">
+                <h3>이름</h3>
+                <p>김수정</p>
+            </div>
+            <div class="box">
+                <h3>한마디 자기소개</h3>
+                <p>한순간에 타올라 모든 걸 태워버리는 거센 불길이 되기보단 은은한게 향을 입혀 오래갈 수 있도록 하는 훈연같은 사람이 되고 싶습니다.</p>
+            </div>
+            <div class="box">
+                <h3>생년월일</h3>
+                <p id="BD">1999.11.22</p>
+            </div>
+            <div class="box">
+                <h3>MBTI</h3>
+                <p>ISFP가 주로 나오고 INFP, ENFP, INTP도 종종 나옵니다</p>
+            </div>
+            <div class="box">
+                <h3>취미</h3>
+                <p>K-pop과 팝송을 찾아보고 듣는 걸 좋아합니다 :)</p>
+            </div>
+            <div class="box">
+                <h3>이메일</h3>
+                <p>개인 : tnwjd9912a@naver.com <br>업무용 : sujk912@gmail.com</p>
+            </div>
+            <div class="box">
+            <h3>링크</h3>
+                <p>깃: <a target="_blank" href="https://github.com/Kimsj912">https://github.com/Kimsj912</a></p>
+                <p>로켓펀치: <a target="_blank" href="https://www.rocketpunch.com/@sujk912">https://www.rocketpunch.com/@sujk912</a></p>
+            </div>
+        </article> 
+            
+    </div>
+    <footer>
+
+    </footer> 
+</body>
+</html>

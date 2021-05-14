@@ -1,0 +1,279 @@
+/* color 
+- basic
+grayish green         #E8EDDF
+dark-grayish green  #6C706C
+
+- highlight
+soft orange           #F5CB5C
+dark-soft orange    #B29443
+
+-background
+white                   #FFFFFF
+dark                    #242423
+*/
+
+/* fontstyle */
+@font-face{
+  font-family: "NanumSquareRoundR";
+  src: url(../font/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundR.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "NanumSquareRoundEB";
+  src: url(../font/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundEB.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "NanumSquareRoundB";
+  src: url(../font/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "NanumSquareR";
+  src: url(../font/NanumFontSetup_TTF_SQUARE/NanumSquareR.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "NanumSquareL";
+  src: url(../font/NanumFontSetup_TTF_SQUARE/NanumSquareL.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "NanumSquareB";
+  src: url(../font/NanumFontSetup_TTF_SQUARE/NanumSquareB.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* start */
+* {box-sizing: border-box;} /**웹페이지의 레이아웃 선택**/
+body { 
+  background-color: #242423;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+#top{
+  display: flex;
+  margin-left: 5%;
+  flex:1;
+}
+.header{
+  flex: 70%;
+  padding: 10px;
+  overflow: visible;
+  /* margin: 0% 0% 0% 5%; */
+}
+nav.nav{
+  flex:30%;
+  align-items:flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+  display: flex;
+
+}
+nav.nav a.tab{
+  background-color: #E8EDDF;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  width: 6em;
+  flex-flow: row wrap;
+  
+  font-family: "NanumSquareR";
+  size: 8em;
+  text-align: center ;
+  text-decoration: none;
+
+  border-color: #6C706C;
+  border-style: solid ;
+  border: 0.1em;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+nav.nav a.tab:hover{
+  background-color: #6C706C;
+  color: #E8EDDF;
+}
+#home_tab{
+  background-color: #F5CB5C;
+}
+#home_tab:hover{
+  background-color: #B29443;
+}
+
+hr {
+  background-color: white;
+  border: solid 3px white  ;
+  margin-top: 0%;
+  margin-left: 5%;
+}
+
+#main{
+  display: flex;
+  flex:1;
+  margin-left: 5%;
+}
+.cont_aside {
+  flex: 20em; 
+}
+.content {
+  flex: 80%;
+}
+
+
+
+h1 {
+  font-family: "NanumSquareRoundEB";
+  font-size: 3.5em;
+  font-style: bold;
+  color: white;
+  margin:0%
+  
+}
+h2 {
+  font-family: "NanumSquareRoundR";
+  font-size: 2.8em;
+  font-style: bold;
+  color: #F5CB5C;
+  margin : 0%;
+  
+}
+h2.page_name{
+  text-align: left;
+  padding-left: 0.5em;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+h3 {
+  font-family: "NanumSquareR";
+  font-size: 1.5em;
+  font-style: normal;
+  color: #F5CB5C;
+  margin:0%
+}
+h4 {
+  font-family: "NanumSquareL";
+  font-size: 1.6em;
+  font-style : normal;
+  margin-left: 2em;
+  color: white;
+  margin: 1em 1em 1em -0.5em;
+}
+h5 {
+  font-family: "NanumSquareR";
+  font-size: 1em;
+  font-style: normal;
+  color: #F5CB5C;
+  margin:0%
+}
+p{
+  font-family: "NanumSquareR";
+  margin-left: 2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: #E8EDDF;
+  line-height: 1.7em;
+}
+p>a.basic_hl{
+  font-size: 1em;
+  color: #E8EDDF;
+}
+
+ul.cont_navbar_ul li.cont_navbar_li :before{
+  content:">>";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 5px 6px 0px;
+  color: #F5CB5C;
+}
+ul.cont_inner_navbar_ul li.cont_inner_navbar_li :before{
+  content:"/";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.1em 0em 0em 0em;
+  color: #F5CB5C;
+}
+ul{
+  list-style: none;
+  text-indent: 0%;
+  padding-bottom: 1em;
+} 
+.cont_navbar_li > a{
+  color: #F5CB5C;
+  text-decoration-line: none;
+  font-family: "NanumSquareB"
+}
+.cont_navbar_li{
+  padding-bottom: 0.8em;
+}
+.cont_inner_navbar_li{
+  padding-bottom: 0.5em;
+}
+.cont_inner_navbar_li > a{
+  color: #F5CB5C;
+  text-decoration-line: none;
+  text-indent: -1em;
+  font-family: "NanumSquareR";
+}
+
+div.nav_div{
+  border: 1em;
+  height: 50%;
+  padding-top: 0.5em;
+  border-color: #ffffff;
+}
+div
+div.inner_box{
+  margin-left: 2em;
+  margin-bottom: 5em;
+}
+.box{
+  margin: 4% 20% 3% 0%;
+}
+.testp{
+  padding-top : 0.4em;
+  margin-left: 0em;
+}
+
+.color_box{
+  margin-left: 1em;
+  width: 8em;
+  height: 8em;
+  flex-direction: column;
+  display: flex;
+}
+.inner_color_box{
+  flex-grow: 1;
+  text-align: center;
+  line-height:4em;
+}
+#bright_basic_color_box{
+  background-color: #E8EDDF;
+  color: #6C706C;
+}
+#dark_basic_color_box{
+  background-color: #6C706C;
+  color: #E8EDDF;  
+}
+#bright_highlight_color_box{
+  background-color: #F5CB5C;
+  color: #B29443;
+}
+#dark_highlight_color_box{
+  background-color: #B29443;
+  color: #F5CB5C;
+}
+#bright_background_color_box{
+  background-color: #ffffff;
+  color: #242423;
+}
+#dark_background_color_box{
+  background-color: #242423;
+  color: #ffffff;
+}

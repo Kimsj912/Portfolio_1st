@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {l% load staticfiles %}
+	<link rel="stylesheet" href="/static/css/style.css">
+
+    <title>안녕하세요! 김수정입니다!</title>
+</head>
+
+<body>
+    <div id="top">
+        <header class="header">
+            <h1 class="blog_name">제가 사용한 asset입니다!!</h1>
+        </header>
+        <nav class="nav">
+            <a class="tab" id="home_tab" href="/">HOME</a>
+            <a class="tab" href="/dev">DEV</a>
+            <a class="tab" href="/proj">PROJ</a>
+            <a class="tab" href="/asset">ASSET</a>
+        </nav>
+    </div>
+    <hr align="right">
+    <div id="main">
+        <aside class="cont_aside">
+            <h2 class="page_name"><페이지정보></h2>
+            <div class="nav_div">
+                <ul class="cont_navbar_ul">
+                    <li class="cont_navbar_li"><a href="#">Color Palette</a></li>
+                        <ul class="cont_inner_navbar_ul">
+                            <li class="cont_inner_navbar_li"><a href="#">basic</a></li>
+                            <li class="cont_inner_navbar_li"><a href="#">highlight</a></li>
+                            <li class="cont_inner_navbar_li"><a href="#">background</a></li>
+                        </ul>
+                    <li class="cont_navbar_li"><a href="#">Text Style</a></li>
+                        <ul class="cont_inner_navbar_ul">
+                            <li class="cont_inner_navbar_li"><a href="#">제목 글꼴</a></li>
+                            <li class="cont_inner_navbar_li"><a href="#">목차 글꼴</a></li>
+                            <li class="cont_inner_navbar_li"><a href="#">기본 글꼴</a></li>
+                        </ul>
+                </ul>
+            </div>
+        </aside>
+
+        <article class="content">
+            <div class="box">
+            <h3>Color Palette</h3>
+                <h4>- basic</h4>
+                    <div class="color_box">
+                        <div id="bright_basic_color_box" class="inner_color_box">#EBEDDF</div>
+                        <div id="dark_basic_color_box" class="inner_color_box">#6C706C</div>
+                    </div>
+                <h4>- highlight</h4>
+                    <div class="color_box">
+                        <div id="bright_highlight_color_box" class="inner_color_box">#F5CB5C</div>
+                        <div id="dark_highlight_color_box" class="inner_color_box">#B29443</div>
+                    </div>
+                <h4>- background</h4>
+                    <div class="color_box">
+                        <div id="bright_background_color_box" class="inner_color_box">#FFFFFF</div>
+                        <div id="dark_background_color_box" class="inner_color_box">#242423</div>
+                    </div>
+            </div>
+            <div class="box">
+                <h3>Text Style</h3>
+                <h4>- 제목 글꼴</h4>
+                    <h1 class="testp">대제목의 예시입니다.</h1>
+                    <h2 class="testp">중제목의 예시입니다</h2>
+                    <h3 class="testp">소제목의 예시입니다</h3>
+                    <h4 class="testp">큰 본문 제목의 예시입니다</h4>
+                    <h5 class="testp">작은 본문 제목의 예시입니다</h5>
+                <br>
+                <h4>- 목차 글꼴</h4>
+                    <span class="testp">
+                    <ul class="cont_navbar_ul">
+                        <li class="cont_navbar_li"><a>큰 목차 제목의 예시입니다.</a></li>
+                    </ul>
+                    <ul class="cont_inner_navbar_ul">
+                        <li class="cont_inner_navbar_li"><a>작은 목차 제목의 예시입니다.</a></li>
+                    </ul>    
+                    </span>
+                <br>    
+                <h4>- 기본 글꼴</h4>
+                    <p class="testp">본문의 예시입니다.</p>
+            </div>
+        </article>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
