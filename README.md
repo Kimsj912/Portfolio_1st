@@ -25,5 +25,6 @@ HTML과 CSS, 약간의 JS를 이용하여 만들었습니다.
 ### ASSET 탭
 > 애셋 탭은 해당 포트폴리오 페이지를 만들면서(혹은 만들 때) 썻던 색이나, 문자를 담았습니다.
 
-#제가 만든 html만을 살펴보시고 싶다면 해당 링크에 접속하시면 확인하실 수 있습니다. :)
+
+##### 제가 만든 html만을 살펴보시고 싶다면 해당 링크에 접속하시면 확인하실 수 있습니다. :)
 > https://github.com/Kimsj912/Portfolio_1st/tree/master/portfolio/portfolioApp/templates
